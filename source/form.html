@@ -48,10 +48,52 @@
          <div class="head-inner">
             <img src="img/sedona.svg" width="229" height="39" alt="Город Седона">
          </div>
+         <section class="about">
+            <h1 class="about__title">Оставьте свой отзыв</h1>
+            <p class="about__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+         </section>
+         <section class="form">
+            <h2 class="form__title visually-hidden">Форма обратной связи</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+               <fieldset class="form__item">
+                  <legend class="form__legend">Представьтесь:</legend>
+                  <label class="form__label">Имя: <input class="form__input--text" type="text" name="name" placeholder="Петр" required></label>
+                  <label class="form__label">Фамилия: <input class="form__input--text" type="text" name="surname" placeholder="Иванов" required></label>
+                  <label class="form__label">Отчество: <input class="form__input--text" type="text" name="midname" placeholder="Александрович" required></label>
+               </fieldset>
+               <hr>
+               <fieldset class="form__item">
+                  <legend class="form__legend">Контактная информация:</legend>
+                  <label class="form__label">Контактный телефон: <input class="form__input--phone" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required></label>
+                  <label class="form__label">Электронная почта: <input class="form__input--email" type="email" name="email" placeholder="Введите e-mail" required></label>
+               </fieldset>
+               <hr>
+               <fieldset class="form__item">
+                  <legend class="form__legend">Ваше общее впечатление:</legend>
+                  <label class="form__label">Скорее положительные <input class="form__input--radio" type="radio" name="positive" value="positive" checked></label>
+                  <label class="form__label">Скорее отрицательное <input class="form__input--radio" type="radio" name="negative" value="negative"></label>
+                  <label class="form__label">Затрудняюсь ответить <input class="form__input--radio" type="radio" name="neutral" value="neutral"></label>
+               </fieldset>
+               <hr>
+               <fieldset class="form__item">
+                  <legend class="form__legend">Посещенные достопримечательности:</legend>
+                  <label class="form__label">Мост Дьявола <input class="form__input--checkbox" type="checkbox" name="bridge" value="bridge" checked></label>
+                  <label class="form__label">Гора-Колокол <input class="form__input--checkbox" type="checkbox" name="bell" value="bell" checked></label>
+                  <label class="form__label">Слайд-парк <input class="form__input--checkbox" type="checkbox" name="park" value="park" checked></label>
+                  <label class="form__label">Красные скалы <input class="form__input--checkbox" type="checkbox" name="red" value="red"></label>
+               </fieldset>
+               <hr>
+               <fieldset class="form__item">
+                  <legend class="form__legend">Опишите свои эмоции:</legend>
+                  <textarea class="form__textarea" name="comments" rows="5">Опишите подробно все свои восторги</textarea>
+               </fieldset>
+               <button class="form__button" type="submit">Отправить отзыв</button>
+            </form>
+         </section>
          <footer class="page-footer">
             <div class="page-footer__wrapper">
                <b class="page-footer__title">#VISITSEDONA</b>
-               <ul class="social__list">
+               <ul class="social">
                   <li class="social__item">
                      <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
                   </li>

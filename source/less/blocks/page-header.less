@@ -1,0 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: @white;
+  color: @black;
+}
+
+.page-header__logo {
+  height: 84px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    height: 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 96px;
+  }
+}

@@ -13,3 +13,37 @@
   line-height: 21px;
   color: @lightblack;
 }
+
+.recommendations__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .recommendations__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .recommendations__item {
+    max-width: 193px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendations__list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.recommendations__item {
+  max-width: 313px;
+  text-align: center;
+}
+}

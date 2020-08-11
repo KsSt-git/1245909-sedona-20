@@ -1,20 +1,36 @@
+.interest {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .interest__button {
   background-color: @blue;
   color: @white;
   border: none;
   font-size: 21px;
   line-height: 26px;
-  max-width: 280px;
+  width: 280px;
 height: 58px;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 49px;
 }
 
 .interest__title {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
 }
 
 .interest__text {
@@ -24,15 +40,25 @@ height: 58px;
 }
 
 
-.interest {
-  @media (min-width: @tablet-width) {
-    margin: auto;
-    max-width: 458px;
+@media (min-width: @tablet-width) {
+  .interest__title {
+    font-size: 30px;
+    padding-top: 57px;
   }
 
-  @media (min-width: @desktop-width) {
-    margin: auto;
-    max-width: 458px;
+  .interest__button {
+    width: 458px;
+    margin-bottom: 58px;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .interest__title {
+    font-size: 30px;
+    padding-top: 57px;
+  }
+  .interest__button {
+    width: 458px;
+    margin-bottom: 66px;
+  }
+}

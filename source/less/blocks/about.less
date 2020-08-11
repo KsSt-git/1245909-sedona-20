@@ -1,9 +1,20 @@
-.about__img {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  height: 389px;
-
+.about {
+  background-image: url("../img/intro-triangle.svg");
 }
+
+.about__img {
+  background: url("../img/bg-back-mobile@1x.jpg") 100% 100% no-repeat;
+  background-size: cover;
+  width: 901px;
+  height: 389px;
+}
+
+.about__logo {
+  background-image: url("../img/text-index.svg");
+  width: 282px;
+  height: 214px;
+}
+
 .about__title {
   font-weight: bold;
   font-size: 18px;
@@ -13,3 +24,32 @@
   font-size: 14px;
   color: @lightblack;
 }
+
+@media (min-width: @tablet-width) {
+  .about {
+    background-image: url("../img/intro-triangle.svg");
+  }
+  .about__img {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    height: 518px;
+  }
+  .about__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    background-image: url("../img/intro-triangle.svg");
+  }
+  .about__img {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    height: 518px;
+  }
+  .about__title {
+    font-size: 21px;
+  }
+}
+
